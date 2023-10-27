@@ -8,10 +8,10 @@
       <img [src]="prod.imageURL" class="ekart--product--image" />
     </div>
     <div class="ekart--add--to--price">{{ prod.price }}</div>
-    <div class="ekart--product--name">NAME</div>
-    <div class="ekart--product--category">GENDER . CATEGORY . BRAND</div>
+    <div class="ekart--product--name">{{prod.name}}</div>
+    <div class="ekart--product--category">{{prod.gender}} . {{prod.category}} . {{prod.brand}}</div>
     <div class="ekart--product--available-colors">
-      $COLORCOUNT Colors . Best Seller
+      {{prod.color.length}} Colors . Best Seller
     </div>
   </div>
 </div>
